@@ -60,10 +60,10 @@ public class Keyword {
 	               for(int i = 0; i<kl.size(); i++) { 
 	            	   String text;
 	            	   org.snu.ids.kkma.index.Keyword kwrd = kl.get(i);
-	            	   text = kwrd.getString()+":"+kwrd.getCnt()+"#";
+	            	   text = "#"+kwrd.getString()+":\t"+kwrd.getCnt()+"\t";
 //	            	   System.out.println(text);
 	            	   body.appendChild(newdoc.createTextNode(text));
-	            	   docs.appendChild(body);
+	            	   code.appendChild(body);
 	               }
 	            }
 	         }
