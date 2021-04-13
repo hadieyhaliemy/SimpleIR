@@ -18,7 +18,7 @@ import org.snu.ids.kkma.index.KeywordList;
 public class Searcher {
 
 	
-	public void CalcSim (String input) throws IOException, ClassNotFoundException {
+	public void InnerProduct (String input) throws IOException, ClassNotFoundException {
 		double [] Freq = new double[5];
 		 FileInputStream fileStream = new FileInputStream("/Users/hadiey/Documents/SimpleIR/Index.post");
  		 ObjectInputStream ObjIs = new ObjectInputStream(fileStream);
@@ -116,7 +116,7 @@ public class Searcher {
 		System.out.print("Please Input Text:");
 		String input = sc.nextLine();
 		Searcher ss = new Searcher();
-		ss.CalcSim(input);
+		ss.InnerProduct(input);
 
 	}
 
